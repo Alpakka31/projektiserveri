@@ -1,13 +1,16 @@
+/*Html elementin muutokset*/
 html {
   background: url("qmark.jpg") no-repeat center center fixed;
   background-size: cover;
   scroll-behavior: smooth;
 }
 
+/*body elementin muutokset*/
 body {
 	font-family: 'Dekko';
 }
 
+/*Otsikon muutokset*/
 #otsikko {
 	color: blue;
 	font-family: 'Dekko';
@@ -17,17 +20,20 @@ body {
 	animation: scale-up-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
+/*Tiedotteen muutokset*/
 #tieto {
   color: black;
 	font-family: 'Dekko';
 	margin-left: 100px;
 }
 
+/*Navigointi palkki*/
 #linkit {
 	overflow: hidden;
 	border-bottom: 1px dashed black;
 }
 
+/*Linkkien muutokset*/
 #linkit a {
 	color: blue;
 	font-size: 20px;
@@ -49,7 +55,7 @@ body {
 
 
 
-
+/*Tietovisa napin muutokset*/
 #nappi {
   border-radius: 30px;
   border: 40px;
