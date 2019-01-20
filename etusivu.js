@@ -1,4 +1,4 @@
-function yllätys() {
-  var tere = document.getElementById("tere");
-    tere.play();
+// Easter egg
+function info() {
+  alert(":)");
 }

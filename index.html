@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
 	<title>Projektiserveri</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sivu on tarkoitettu omille projekteille.">
+	<meta name="keywords" content="projekti html css js ohjelmointi">
+	<meta name="author" content="Patrik Nyström">
 	<link rel="icon" type="image/png" href="bash_icon.png">
 	<link rel="stylesheet" type="text/css" href="etusivu.css">
+	<link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet"> 
 	<script src="etusivu.js"></script>
 </head>
 <body>
+	<noscript>Tämä sivu vaatii JavaScriptin... :)</noscript>
 	<div id="linkit">
 		<nav>
-				<a href="./tietovisa/tietovisa.html" class="projekti1"> <img src="tietovisa.png" width="98" height="18"></a>
+			<a href="./tietovisa/tietovisa.html" title="Vie tietovisaan..." class="shake">Tietovisa</a>
 		</nav>
 	</div>
-	<h1 class="otsikko">Projektiserveri!</h1>
-	<h2 class="tieto">Tänne tulee projekteja... :)</h2>
-	<audio id="tere">
-		<source src="yllätys.flac" type="audio/flac">
-		Selaimesi ei tue audio elementtiä.
-	</audio>
-	<button type="button" class="yllätys" onclick="yllätys()"><strong>...</strong></button>
+	<header>
+		<h1 id="otsikko">Projektiserveri!</h1>
+		<h2 id="kuvaus">Tänne tulee projekteja... <span onclick="info()">:)</span></h2>
+	</header>
+	<div id="inlinks">
+		<nav>
+			<a href="https://w3schools.com" title="Vie W3schools:iin" class="shake" target="_blank">W3Schools</a>
+			<a href="https://github.com/Alpakka31" title="Vie miun GitHub sivulle" class="shake" target="_blank">GitHub</a>
+			<a href="https://linux.fi" title="Vie Linux.fi" class="shake" target="_blank">Linux.fi</a>
+		</nav>
+	</div>
 </body>
 </html>

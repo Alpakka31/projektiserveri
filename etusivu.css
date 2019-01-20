@@ -1,43 +1,226 @@
+/*Tausta*/
 html {
   background: url("ethernet_rj-45.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	background-size: cover;
+	scroll-behavior: smooth;
 }
 
-h1.otsikko {
-  color: white;
+/*Body elementin muutokset*/
+body {
+	font-family: 'Dekko';
 }
 
-h2.tieto {
-  color: white;
+/*Otsikko*/
+#otsikko {
+	color: white;
+	font-family: 'Dekko';
+	margin-left: 100px;
+	margin-top: 40px;
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 
-a.projekti1 {
-  color: blue;
+/*Sivun kuvaus*/
+#kuvaus {
+	color: white;
+	font-family: 'Dekko';
+	margin-left: 100px;
 }
 
-button.yllätys {
-	-moz-box-shadow:inset -50px -50px 0px -50px #29bbff;
-	-webkit-box-shadow:inset -50px -50px 0px -50px #29bbff;
-	box-shadow:inset -50px -50px 0px -50px #29bbff;
-	background-color:transparent;
-	-moz-border-radius:42px;
-	-webkit-border-radius:42px;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color:#FFFFFF;
-	font-family:Arial;
-	font-size:15px;
-	padding:5px 7px;
-	text-decoration:none;
+/*Projektien navigointi*/
+#linkit {
+	overflow: hidden;
+	/*border-bottom: 1px dashed white;*/
 }
-button.yllätys:hover {
-	background-color:transparent;
+/*Projektien linkit*/
+#linkit a {
+	color: white;
+	font-size: 20px;
+	font-family: 'Dekko';
+	text-align: center;
+	float: left;
+	display: block;
+	padding: 3px 5px;
+	text-decoration: none;
 }
-button.yllätys:active {
-	position:relative;
-	top:1px;
+
+#linkit a:hover {
+	color: dodgerblue;
 }
+
+#linkit a:active {
+	color: white;
+}
+
+/*Apusivujen navigointi*/
+#inlinks {
+	overflow: hidden;
+	border-top: 1px dashed white;
+	width: 220px;
+}
+
+/*Apusivujen linkit*/
+#inlinks a {
+	color: white;
+	font-size: 20px;
+	font-family: 'Dekko';
+	text-align: center;
+	float: left;
+	display: block;
+	padding: 3px 5px;
+	text-decoration: none;
+}
+
+#inlinks a:hover {
+	color: dodgerblue;
+}
+
+#inlinks a:active {
+	color: white;
+}
+
+/*Otsikon animointi*/
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*Järistys animointi efekti*/
+.shake {
+  display: inherit;
+  transform-origin: center center; }
+
+.shake-freeze,
+.shake-constant.shake-constant--hover:hover,
+.shake-trigger:hover .shake-constant.shake-constant--hover {
+  animation-play-state: paused; }
+
+.shake-freeze:hover,
+.shake-trigger:hover .shake-freeze, .shake:hover,
+.shake-trigger:hover .shake {
+  animation-play-state: running; }
+
+@keyframes shake {
+  2% {
+    transform: translate(1.5px, 1.5px) rotate(-0.5deg); }
+  4% {
+    transform: translate(0.5px, -0.5px) rotate(1.5deg); }
+  6% {
+    transform: translate(-0.5px, -0.5px) rotate(0.5deg); }
+  8% {
+    transform: translate(-1.5px, -0.5px) rotate(1.5deg); }
+  10% {
+    transform: translate(0.5px, -0.5px) rotate(0.5deg); }
+  12% {
+    transform: translate(0.5px, 1.5px) rotate(0.5deg); }
+  14% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg); }
+  16% {
+    transform: translate(-1.5px, -0.5px) rotate(1.5deg); }
+  18% {
+    transform: translate(-0.5px, 0.5px) rotate(-0.5deg); }
+  20% {
+    transform: translate(-0.5px, 2.5px) rotate(-0.5deg); }
+  22% {
+    transform: translate(-1.5px, 0.5px) rotate(0.5deg); }
+  24% {
+    transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+  26% {
+    transform: translate(-0.5px, 0.5px) rotate(0.5deg); }
+  28% {
+    transform: translate(-0.5px, -0.5px) rotate(1.5deg); }
+  30% {
+    transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+  32% {
+    transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+  34% {
+    transform: translate(-1.5px, 0.5px) rotate(1.5deg); }
+  36% {
+    transform: translate(2.5px, 2.5px) rotate(-0.5deg); }
+  38% {
+    transform: translate(0.5px, 0.5px) rotate(1.5deg); }
+  40% {
+    transform: translate(-0.5px, 0.5px) rotate(1.5deg); }
+  42% {
+    transform: translate(0.5px, -0.5px) rotate(-0.5deg); }
+  44% {
+    transform: translate(1.5px, -1.5px) rotate(1.5deg); }
+  46% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+  48% {
+    transform: translate(-1.5px, 2.5px) rotate(-0.5deg); }
+  50% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg); }
+  52% {
+    transform: translate(2.5px, -0.5px) rotate(-0.5deg); }
+  54% {
+    transform: translate(2.5px, -1.5px) rotate(0.5deg); }
+  56% {
+    transform: translate(2.5px, -0.5px) rotate(0.5deg); }
+  58% {
+    transform: translate(2.5px, 1.5px) rotate(1.5deg); }
+  60% {
+    transform: translate(1.5px, -1.5px) rotate(0.5deg); }
+  62% {
+    transform: translate(1.5px, 2.5px) rotate(1.5deg); }
+  64% {
+    transform: translate(1.5px, 0.5px) rotate(1.5deg); }
+  66% {
+    transform: translate(1.5px, 1.5px) rotate(0.5deg); }
+  68% {
+    transform: translate(1.5px, -1.5px) rotate(-0.5deg); }
+  70% {
+    transform: translate(1.5px, -0.5px) rotate(0.5deg); }
+  72% {
+    transform: translate(-1.5px, -1.5px) rotate(-0.5deg); }
+  74% {
+    transform: translate(2.5px, 2.5px) rotate(0.5deg); }
+  76% {
+    transform: translate(1.5px, -1.5px) rotate(-0.5deg); }
+  78% {
+    transform: translate(-0.5px, 2.5px) rotate(-0.5deg); }
+  80% {
+    transform: translate(0.5px, -1.5px) rotate(-0.5deg); }
+  82% {
+    transform: translate(2.5px, -1.5px) rotate(-0.5deg); }
+  84% {
+    transform: translate(-1.5px, -1.5px) rotate(0.5deg); }
+  86% {
+    transform: translate(-1.5px, 1.5px) rotate(-0.5deg); }
+  88% {
+    transform: translate(2.5px, 0.5px) rotate(1.5deg); }
+  90% {
+    transform: translate(1.5px, 1.5px) rotate(1.5deg); }
+  92% {
+    transform: translate(1.5px, 2.5px) rotate(0.5deg); }
+  94% {
+    transform: translate(2.5px, -0.5px) rotate(1.5deg); }
+  96% {
+    transform: translate(1.5px, 2.5px) rotate(1.5deg); }
+  98% {
+    transform: translate(1.5px, 2.5px) rotate(0.5deg); }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0); } }
+
+.shake:hover,
+.shake-trigger:hover .shake, .shake.shake-freeze, .shake.shake-constant {
+  animation-name: shake;
+  animation-duration: 100ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
