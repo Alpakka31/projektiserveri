@@ -1,211 +1,193 @@
 function tietovisa() {
 
-let score;
-	score = 0;
+	let piste = 0;
 
-alert("Aloitetaan!")
-
-	let q1;
-
-	q1 = prompt("Mikä on tietokoneen tärkein osa?")
-	if(q1 == "Emolevy" || q1 == "emolevy") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	// Alkukysymys
+	let alku = confirm("Haluatko aloittaa tietovisan?");
+	if (alku == true) {
+		window.alert("Aloitetaan...")
+	}
+	else if (alku == false) {
+		return;
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		window.alert("Et valinnut mitään...")
+	}
 
+	// KYSYMYKSET
 
-
-	q2 = prompt("Mitä CTRL+Z tekee wordissa?")
-	if(q2 == "Kumoaa" || q2 == "kumoaa") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	// eka kysymys
+	k1 = prompt("Mikä on tietokoneen tärkein osa?")
+	if (k1 == "Emolevy" || k1 == "emolevy") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q3 = prompt("Kuinka monta megatavua on gigatavussa?")
-	if(q3 == "1024") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	// toka kysymys
+	k2 = prompt("Mitä CTRL+Z tekee wordissa?")
+	if (k2 == "Kumoaa" || k2 == "kumoaa") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q4 = prompt("Mikä on tietokoneväylä englanniksi?")
-	if(q4 == "Bus" || q4 == "bus") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
+	//kolmas kysymys
+	k3 = prompt("Kuinka monta megatavua on gigatavussa?")
+	if (k3 == "1024") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q5 = prompt("Minkä merkkinen oli ensimmäinen tietokone?")
-	if(q5 == "IBM" || q5 == "ibm") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
+	//neljäs kysymys
+	k4 = prompt("Mikä on tietokoneväylä englanniksi?")
+	if (k4 == "Bus" || k4 == "bus") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q6 = prompt("Kuinka monta merkkiä on tavussa?")
-	if(q6 == "8") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
+	//viides kysymys
+	k5 = prompt("Minkä merkkinen oli ensimmäinen tietokone?")
+	if (k5 == "IBM" || k5 == "ibm") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q7 = prompt("Kuinka monta arvoa bitissä voi olla?")
-	if(q7 == "2") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//kuudes kysymys
+	k6 = prompt("Kuinka monta merkkiä on tavussa?")
+	if (k6 == "8") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q8 = prompt("Mistä sanasta tulee LAN verkon L kirjain?")
-	if(q8 == "Local" || q8 == "local") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//seisemäs kysymys
+	k7 = prompt("Kuinka monta arvoa bitissä voi olla?")
+	if (k7 == "2") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q9 = prompt("Mikä on BIOS koko nimeltään?")
-	if(q9 == "Basic Input/Output System" || q9 == "basic input/output system") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//kahdeksas kysymys
+	k8 = prompt("Mistä sanasta tulee LAN verkon L kirjain?")
+	if (k8 == "Local" || k8 == "local") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q10 = prompt("Mikä on .exe koko nimeltään? 1. executable 2. execute 3. executed")
-	if(q10 == "1") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
-	else if (q10 == "2") {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
-
+	//yhdeksäs kysymys
+	k9 = prompt("Mikä on BIOS koko nimeltään?")
+	if (k9 == "Basic Input/Output System" || k9 == "basic input/output system") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		q10 == "3"
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q11 = prompt("Mikä on HTTP koko nimeltään?")
-	if(q11 == "Hypertext Transfer Protocol" || q11 == "hypertext transfer protocol") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//kymmenes kysymys
+	k10 = prompt("Mikä on .exe koko nimeltään? \n 1. executable 2. execute 3. executed")
+	if (k10 == "1") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
+	else if (k10 == "2") {
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		k10 == "3"
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q12 = prompt("Mikä on HTTPS koko nimeltään?")
-	if(q12 == "Hypertext Transfer Protocol Secure" || q12 == "hypertext transfer protocol secure") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//11 kysymys
+	k11 = prompt("Mikä on HTTP koko nimeltään?")
+	if (k11 == "Hypertext Transfer Protocol" || k11 == "hypertext transfer protocol") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q13 = prompt("Mikä on FTP koko nimeltään?")
-	if(q13 == "File Transfer Protocol" || q13 == "file transfer protocol") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//12 kysymys
+	k12 = prompt("Mikä on HTTPS koko nimeltään?")
+	if (k12 == "Hypertext Transfer Protocol Secure" || k12 == "hypertext transfer protocol secure") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q14 = prompt("Mikä on SFTP koko nimeltään?")
-	if(q14 == "SSH File Transfer Protocol" || q14 == "ssh file transfer protocol") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//13 kysymys
+	k13 = prompt("Mikä on FTP koko nimeltään?")
+	if (k13 == "File Transfer Protocol" || k13 == "file transfer protocol") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-
-
-	q15 = prompt("Mikä on SGI koko nimeltään?")
-	if(q15 == "Silicon Graphics" || q15 == "silicon graphics") {
-		score++;
-		alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
+	//14 kysymys
+	k14 = prompt("Mikä on SFTP koko nimeltään?")
+	if (k14 == "SSH File Transfer Protocol" || k14 == "ssh file transfer protocol") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Väärin! " + "Pisteesi on " + score)
-}
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
 
-q16 = prompt("Mikä on Bourne Shell toiselta nimeltään? 1. shell 2. sh")
-if(q16 == "2") {
-	score++;
-	alert("Oikein! " + "Pisteesi on " + score + " tällä hetkellä.")
-}
-
-else if (q16 == "1") {
-	alert("Väärin! " + "Pisteesi on " + score)
-}
-
-else {
-	alert("Väärin! " + "Pisteesi on " + score)
-}
-
-
-	if(score > 7) {
-		alert("Onneksi olkoon! " + "Pisteesi oli " + score)
-}
+	//15 kysymys
+	k15 = prompt("Mikä on SGI koko nimeltään?")
+	if (k15 == "Silicon Graphics" || k15 == "silicon graphics") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
 	else {
-		alert("Hävisit visan! " + "Pisteesi oli " + score)
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
+
+	//16 kysymys
+	k16 = prompt("Mikä on Bourne Shell toiselta nimeltään? \n 1. bsh 2. sh")
+	if (k16 == "1") {
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
+	else if (k16 == "2") {
+		piste++;
+		alert("Oikein! " + "Pisteesi on " + piste + " tällä hetkellä.")
+	}
+	else {
+		alert("Väärin! " + "Pisteesi on " + piste)
+	}
+
+	//Lopputulos
+	if (piste > 7) {
+		alert("Onneksi olkoon! " + "Pisteesi oli " + piste)
+	}
+	else {
+		alert("Hävisit visan! " + "Pisteesi oli " + piste)
 	}
 }

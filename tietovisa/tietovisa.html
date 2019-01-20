@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
 	<title>Tietovisa</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sivu on tarkoitettu omille projekteille.">
+	<meta name="keywords" content="projekti html css js ohjelmointi">
+	<meta name="author" content="Patrik Nyström">
 	<link rel="icon" type="image/png" href="../bash_icon.png">
 	<link rel="stylesheet" type="text/css" href="tietovisa.css">
-	<script src="tietovisa.js">
-</script>
-<style>
-html {
-	 background: url("kysymysmerkki.gif") no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-</style>
+	<link href="https://fonts.googleapis.com/css?family=Dekko" rel="stylesheet">
+	<script src="tietovisa.js"></script>
 </head>
 <body>
 	<div id="linkit">
 		<nav>
-			<a href="../index.html" class="etusivu"><img src="home.png" width="54" height="24"></a>
-			<a href="./lataukset/tietovisa.py" style="color: white;">Python(UNIX) versio</a>
-			<a href="./lataukset/tietovisa-win.py" style="color: white;">Python(WIN) versio</a>
+			<a href="../index.html" title="Vie etusivulle" class="shake">Etusivu</a>
+			<a href="./lataukset/tietovisa.py" title="Python(UNIX) versio tietovisasta" class="shake">Python(UNIX) versio</a>
+			<a href="./lataukset/tietovisa-win.py" title="Python(WIN) versio tietovisasta" class="shake">Python(WIN) versio</a>
 		</nav>
 	</div>
 	<noscript>Tämä sivu vaatii JavaScriptin... :)</noscript>
-	<h1 class="otsikko">Tietovisa!</h1>
-	<h4 style="color: green;">Pisteitä pitää olla vähintään 8, että voittaa tämän visan.</h4>
-	<button class="nappi" id="nappi" type="button" onclick="tietovisa()">Aloita Tietovisa!</button>
+	<h1 id="otsikko">Tietovisa!</h1>
+	<h4 id="tieto">Pisteitä pitää olla vähintään 8, että voittaa tämän visan.</h4>
+	<button id="nappi" class="shake" type="button" onclick="tietovisa()">Aloita Tietovisa!</button>
 </body>
 </html>
